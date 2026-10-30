@@ -56,15 +56,15 @@ The model is evaluated using:
 
 ## Project Structure
 
-```text
 product-category-classifier/
 ├── README.md
+├── requirements.txt
+├── .gitignore
 ├── product_category_analysis.ipynb
 ├── train_model.py
 ├── predict_category.py
-├── requirements.txt
-└── .gitignore
-```
+├── category_model.pkl
+└── tfidf_vectorizer.pkl
 
 ## How to Run
 
@@ -82,6 +82,16 @@ pip install -r requirements.txt
 
 ## Project Status
 
-The data preprocessing, feature extraction, model training and initial evaluation stages have been completed in Google Colab.
+## Project Status
 
-The remaining project files and final model export will be added as the project is finalized.
+The project currently includes:
+
+- Data exploration and preprocessing
+- Text feature extraction using TF-IDF
+- Logistic Regression model training
+- Model evaluation
+- Saved trained model and TF-IDF vectorizer
+- Prediction script for new product titles
+
+The prediction script was tested successfully with the product title
+"Wireless Bluetooth Headphones".
